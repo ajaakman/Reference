@@ -1,13 +1,12 @@
 ﻿using System;
 
-namespace Variables
+namespace Maths
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string text = "Hello World";
-            Console.WriteLine(text);
+            Console.WriteLine(Math.PI);
             Console.ReadLine();
         }
     }
