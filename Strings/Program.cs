@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Strings
 {
@@ -20,9 +21,27 @@ namespace Strings
             \v Vertical tab
             \xhh. . . Hexadecimal number of one or more digits. */
             int n = 55;
-            var message = string.Format("Hello World {0}", n);
+            string m = "asd sfafa " +
+                "asds ";
+            var message = string.Format("   Hello World {0} {1}", n, m);
 
             Console.WriteLine(message);
+            Console.WriteLine(message.Length);
+
+            message = message.ToUpper();
+            Console.WriteLine(message);
+
+            message = message.ToLower();
+            Console.WriteLine(message);
+
+            message = message.Trim();
+            Console.WriteLine(message);
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append("I am a StringBuilder");
+
+            Console.WriteLine(sb);
+
             Console.ReadLine();
         }
     }

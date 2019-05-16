@@ -5,11 +5,15 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Variables", "Variables\Variables.csproj", "{5DB59F29-DD1F-4C22-90A5-AA8537D237D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sys", "Sys\Sys.csproj", "{90F86FB0-4873-47BE-9C95-245CADCF6169}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sys", "Sys\Sys.csproj", "{90F86FB0-4873-47BE-9C95-245CADCF6169}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{9F2D7FE4-2FA1-4189-AD20-83F026A1C95A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strings", "Strings\Strings.csproj", "{9F2D7FE4-2FA1-4189-AD20-83F026A1C95A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maths", "Math\Maths.csproj", "{50720C14-538A-41BC-A9D5-C64636C0D648}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maths", "Math\Maths.csproj", "{50720C14-538A-41BC-A9D5-C64636C0D648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Branches", "Branches\Branches.csproj", "{CD98C3C5-9292-403D-A545-59425044D980}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops", "Loops\Loops.csproj", "{33454D5E-D793-4654-A24F-170241CA93FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{50720C14-538A-41BC-A9D5-C64636C0D648}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50720C14-538A-41BC-A9D5-C64636C0D648}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50720C14-538A-41BC-A9D5-C64636C0D648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD98C3C5-9292-403D-A545-59425044D980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD98C3C5-9292-403D-A545-59425044D980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD98C3C5-9292-403D-A545-59425044D980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD98C3C5-9292-403D-A545-59425044D980}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33454D5E-D793-4654-A24F-170241CA93FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33454D5E-D793-4654-A24F-170241CA93FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33454D5E-D793-4654-A24F-170241CA93FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33454D5E-D793-4654-A24F-170241CA93FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

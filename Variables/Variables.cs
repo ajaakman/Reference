@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Variables
 {
@@ -22,10 +23,10 @@ namespace Variables
             double myDouble = 5.5D;
             decimal myDecimal = 6.5M;
 
-            Console.WriteLine("{0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, {12}", 
-                myShort, myUshort, myInt, myUint, myLong, myUlong, myBool, myChar, myByte, mySbyte, myFloat, myDouble, myDecimal);
+            Console.WriteLine("{0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, {12}, {13}", 
+                myShort, myUshort, myInt, myUint, myLong, myUlong, myBool, myChar, myByte, mySbyte, myFloat, myDouble, myDecimal, pi);
 
-            Console.WriteLine("Size of int in bytes: {0}", sizeof(int));
+            Console.WriteLine("Size of int in bytes: {0}, type of int class {1}", sizeof(int), typeof(int));
             
             // Reference Types
             string myString = @"Hello World";
@@ -60,6 +61,9 @@ namespace Variables
             tempString = "false";
             myBool = Convert.ToBoolean(tempString);
             Console.WriteLine("{0}", myBool);
+
+            Object obj2 = new StringReader("Hello");
+            StringReader r = obj2 as StringReader;
 
             Console.ReadLine();
         }
