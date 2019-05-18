@@ -8,23 +8,24 @@ namespace Variables
         static void Main(string[] args)
         {
             const double pi = 3.14159;
+            int? nullableInt = null;
             // Value Types
-            bool myBool = true;
-            char myChar = 'A';
-            byte myByte = 255;
-            sbyte mySbyte = -128;
-            short myShort = -32768;
-            ushort myUshort = 65535;
-            int myInt = int.Parse("456");
-            uint myUint = uint.MaxValue;
-            long myLong = -9223372036854775808;
-            ulong myUlong = 18446744073709551615;
-            float myFloat = 4.5F;
-            double myDouble = 5.5D;
-            decimal myDecimal = 6.5M;
-
-            Console.WriteLine("{0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, {12}, {13}", 
-                myShort, myUshort, myInt, myUint, myLong, myUlong, myBool, myChar, myByte, mySbyte, myFloat, myDouble, myDecimal, pi);
+            bool myBool = true; //Boolean
+            char myChar = 'A'; //Char
+            byte myByte = 255; //Byte
+            sbyte mySbyte = -128; //SByte
+            short myShort = -32768; //Int16
+            ushort myUshort = 65535; //UInt16
+            int myInt = int.Parse("456"); //Int32
+            uint myUint = uint.MaxValue; //UInt32
+            long myLong = -9223372036854775808; //Int64
+            ulong myUlong = 18446744073709551615; //UInt64
+            float myFloat = 4.5F; //Single
+            double myDouble = 5.5D; //Double
+            decimal myDecimal = 6.5M; //Decimal
+            
+            Console.WriteLine("{0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, {12}, {13}, {14}", 
+                myShort, myUshort, myInt, myUint, myLong, myUlong, myBool, myChar, myByte, mySbyte, myFloat, myDouble, myDecimal, pi, nullableInt);
 
             Console.WriteLine("Size of int in bytes: {0}, type of int class {1}", sizeof(int), typeof(int));
             
