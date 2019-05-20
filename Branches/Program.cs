@@ -4,6 +4,8 @@ namespace Branches
 {
     class Program
     {
+        enum Grades { A, B, C, D, E, F };
+
         static void Main(string[] args)
         {
             object a = 10;
@@ -14,20 +16,20 @@ namespace Branches
             
             Console.WriteLine((5 == 5) ? 2 : 6);
 
-            char grade = 'B';
+            int grade = (int)Grades.B;
             switch (grade)
             {
-                case 'A':
+                case (int)Grades.A:
                     Console.WriteLine("Excellent!");
                     break;
-                case 'B':
-                case 'C':
+                case (int)Grades.B:
+                case (int)Grades.C:
                     Console.WriteLine("Well done");
                     break;
-                case 'D':
+                case (int)Grades.D:
                     Console.WriteLine("You passed");
                     break;
-                case 'F':
+                case (int)Grades.F:
                     Console.WriteLine("Better try again");
                     break;
                 default:

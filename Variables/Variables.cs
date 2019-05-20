@@ -29,6 +29,8 @@ namespace Variables
 
             Console.WriteLine("Size of int in bytes: {0}, type of int class {1}", sizeof(int), typeof(int));
             
+            // Structs
+
             // Reference Types
             string myString = @"Hello World";
             object obj = myString; // Can be any type. Type checking at compile time.

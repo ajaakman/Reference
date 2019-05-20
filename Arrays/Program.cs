@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Arrays
 {
@@ -7,6 +8,8 @@ namespace Arrays
         static void Main(string[] args)
         {
             int[] myArray = new int[] { 4, 5, 2, 8 };
+            Array.Resize(ref myArray, 5);
+            myArray[4] = 7;
             int[] myArray1 = myArray;
 
             foreach (var item in myArray)
@@ -16,6 +19,8 @@ namespace Arrays
             foreach (var item in myArray1)
                 Console.Write("{0}, ", item);
             Console.WriteLine();
+            var listofnum = new int[5] { 4, 6, 7, 6, 7};
+            listofnum.Sum();
 
             myArray[2] = 10;
 

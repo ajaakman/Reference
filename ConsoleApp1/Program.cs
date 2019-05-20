@@ -3,12 +3,33 @@ using System.Text;
 
 namespace Classes
 {
-    class Test
+
+    interface IBase
+    {
+
+    }
+
+    interface IBase2
+    {
+
+    }
+
+    abstract public class Base : IBase, IBase2
+    {
+        public Base(string name)
+        {
+            Name = name;
+        }
+        public string Name { get; set; }
+        public abstract void Greeting();
+        public virtual void SayName() { Console.WriteLine(Name); }
+    }
+
+    sealed public class Test : Base
     {
         private string myPrivateVar = "Private Var";
         public int myPublicVar = 55;
-        internal int myInternalInt = 84;
-        public string Name { get; set; }
+        internal int myInternalInt = 84;        
 
         private string _twitterAddress;
         public string TwitterName
@@ -27,7 +48,7 @@ namespace Classes
             }
         }
 
-        public Test()
+        public Test(string name) : base(name)
         {
             Console.WriteLine(myPrivateVar);
         }
@@ -39,18 +60,30 @@ namespace Classes
             return sb.ToString();
         }
 
+        public override void Greeting()
+        {
+            Console.WriteLine("Hello");
+        }
     }
 
     class Program
     {
         static void Main(string[] args)
         {
-            Test test = new Test();
+            Test test = new Test("My Name");
             Test1 test1 = new Test1();
-            test.Name = "Hello";
             test.TwitterName = "@Hello";
             Console.WriteLine("{0}, {1}, {2}, {3}, {4}", test.Name, test.TwitterName, test.myPublicVar, test.myInternalInt, test.ToString());
+
+            Greet(test);
+            test.SayName();
             Console.Read();
         }
+
+        static void Greet(Base b)
+        {
+            b.Greeting();
+        }
+
     }
 }

@@ -42,6 +42,24 @@ namespace Strings
 
             Console.WriteLine(sb);
 
+            foreach (char c in m)            
+                Console.Write(c);
+            
+
+            Console.WriteLine();
+
+            string str1 = "This is test";
+            string str2 = "This is text";
+
+            if (String.Compare(str1, str2) == 0)            
+                Console.WriteLine(str1 + " and " + str2 + " are equal.");            
+            else            
+                Console.WriteLine(str1 + " and " + str2 + " are not equal.");            
+
+            if(str1.Contains("test")) 
+                Console.WriteLine("The sequence 'test' was found.");
+            
+
             Console.ReadLine();
         }
     }
